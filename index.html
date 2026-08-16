@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AI YouTube Automation Agent</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-icon">▶</div>
+
+      <div>
+        <h1>AI YouTube Agent</h1>
+        <p>Automate Your YouTube Production</p>
+      </div>
+    </div>
+
+    <div class="status">
+      <span class="status-dot"></span>
+      System Ready
+    </div>
+  </header>
+
+
+  <!-- MAIN -->
+  <main class="container">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div>
+        <span class="badge">🤖 AI POWERED</span>
+
+        <h2>Create Complete YouTube Videos Automatically</h2>
+
+        <p>
+          Enter your topic once and let AI handle research,
+          scripting, scenes, prompts, voice, SEO and quality control.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- CREATE VIDEO -->
+    <section class="card">
+
+      <div class="section-title">
+        <div>
+          <h2>🎬 Create New Video</h2>
+          <p>Give AI the basic information about your video.</p>
+        </div>
+
+        <span class="step">STEP 1</span>
+      </div>
+
+
+      <div class="form-grid">
+
+        <!-- NICHE -->
+        <div class="input-group">
+          <label for="niche">YouTube Niche</label>
+
+          <input
+            id="niche"
+            type="text"
+            placeholder="Example: AI Tools, Online Earning"
+          >
+        </div>
+
+
+        <!-- TOPIC -->
+        <div class="input-group">
+          <label for="topic">Video Topic</label>
+
+          <input
+            id="topic"
+            type="text"
+            placeholder="Example: 5 AI Tools You Need in 2026"
+          >
+        </div>
+
+
+        <!-- LANGUAGE -->
+        <div class="input-group">
+          <label for="language">Language</label>
+
+          <select id="language">
+            <option value="Urdu">Urdu</option>
+            <option value="English">English</option>
+            <option value="Roman Urdu">Roman Urdu</option>
+            <option value="Hindi">Hindi</option>
+          </select>
+        </div>
+
+
+        <!-- VIDEO TYPE -->
+        <div class="input-group">
+          <label for="videoType">Video Type</label>
+
+          <select id="videoType">
+            <option value="Long Video">Long Video</option>
+            <option value="Shorts">YouTube Shorts</option>
+            <option value="Faceless">Faceless Video</option>
+            <option value="Tutorial">Tutorial</option>
+            <option value="Documentary">Documentary</option>
+          </select>
+        </div>
+
+
+        <!-- DURATION -->
+        <div class="input-group">
+          <label for="duration">Video Duration</label>
+
+          <select id="duration">
+            <option value="30 seconds">30 Seconds</option>
+            <option value="60 seconds">60 Seconds</option>
+            <option value="3 minutes">3 Minutes</option>
+            <option value="5 minutes">5 Minutes</option>
+            <option value="10 minutes">10 Minutes</option>
+            <option value="15 minutes">15 Minutes</option>
+          </select>
+        </div>
+
+
+        <!-- AUDIENCE -->
+        <div class="input-group">
+          <label for="audience">Target Audience</label>
+
+          <input
+            id="audience"
+            type="text"
+            placeholder="Example: Beginners"
+          >
+        </div>
+
+      </div>
+
+
+      <!-- GENERATE -->
+      <button id="generateBtn" class="generate-btn">
+        <span>🚀</span>
+        Start Automatic Production
+      </button>
+
+    </section>
+
+
+    <!-- PIPELINE -->
+    <section class="card">
+
+      <div class="section-title">
+        <div>
+          <h2>⚡ AI Production Pipeline</h2>
+
+          <p>
+            AI agents will automatically complete each stage.
+          </p>
+        </div>
+
+        <span class="step">AUTO</span>
+      </div>
+
+
+      <div class="pipeline">
+
+        <!-- IDEA -->
+        <div class="agent waiting" data-agent="idea">
+
+          <div class="agent-icon">💡</div>
+
+          <div class="agent-info">
+            <h3>Idea Agent</h3>
+            <p>Creates viral video concept</p>
+          </div>
+
+          <span class="agent-status">Waiting</span>
+
+        </div>
+
+
+        <!-- RESEARCH -->
+        <div class="agent waiting" data-agent="research">
+
+          <div class="agent-icon">🔎</div>
+
+          <div class="agent-info">
+            <h3>Research Agent</h3>
+            <p>Researches topic and important facts</p>
+          </div>
+
+          <span class="agent-status">Waiting</span>
+
+        </div>
+
+
+        <!-- SCRIPT -->
+        <div class="agent waiting" data-agent="script">
+
+          <div class="agent-icon">✍️</div>
+
+          <div class="agent-info">
+            <h3>Script Agent</h3>
+            <p>Writes complete engaging script</p>
+          </div>
+
+          <span class="agent-status">Waiting</span>
+
+        </div>
+
+
+        <!-- SCENE -->
+        <div class="agent waiting" data-agent="scene">
+
+          <div class="agent-icon">🎬</div>
+
+          <div class="agent-info">
+            <h3>Scene Agent</h3>
+            <p>Converts script into scenes</p>
+          </div>
+
+          <span class="agent-status">Waiting</span>
+
+        </div>
+
+
+        <!-- VIDEO PROMPT -->
+        <div class="agent waiting" data-agent="videoPrompt">
+
+          <div class="agent-icon">🎥</div>
+
+          <div class="agent-info">
+            <h3>Video Prompt Agent</h3>
+            <p>Creates AI image and video prompts</p>
+          </div>
+
+          <span class="agent-status">Waiting</span>
+
+        </div>
+
+
+        <!-- VOICE -->
+        <div class="agent waiting" data-agent="voice">
+
+          <div class="agent-icon">🎙️</div>
+
+          <div class="agent-info">
+            <h3>Voice Agent</h3>
+            <p>Prepares professional voiceover</p>
+          </div>
+
+          <span class="agent-status">Waiting</span>
+
+        </div>
+
+
+        <!-- THUMBNAIL -->
+        <div class="agent waiting" data-agent="thumbnail">
+
+          <div class="agent-icon">🖼️</div>
+
+          <div class="agent-info">
+            <h3>Thumbnail Agent</h3>
+            <p>Creates high-CTR thumbnail concept</p>
+          </div>
+
+          <span class="agent-status">Waiting</span>
+
+        </div>
+
+
+        <!-- SEO -->
+        <div class="agent waiting" data-agent="seo">
+
+          <div class="agent-icon">🔍</div>
+
+          <div class="agent-info">
+            <h3>SEO Agent</h3>
+            <p>Generates title, description and keywords</p>
+          </div>
+
+          <span class="agent-status">Waiting</span>
+
+        </div>
+
+
+        <!-- QUALITY -->
+        <div class="agent waiting" data-agent="quality">
+
+          <div class="agent-icon">✅</div>
+
+          <div class="agent-info">
+            <h3>Quality Control Agent</h3>
+            <p>Checks and improves the complete project</p>
+          </div>
+
+          <span class="agent-status">Waiting</span>
+
+        </div>
+
+
+        <!-- EXPORT -->
+        <div class="agent waiting" data-agent="export">
+
+          <div class="agent-icon">📦</div>
+
+          <div class="agent-info">
+            <h3>Export Agent</h3>
+            <p>Prepares final YouTube package</p>
+          </div>
+
+          <span class="agent-status">Waiting</span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PROGRESS -->
+    <section class="card progress-card">
+
+      <div class="progress-header">
+
+        <div>
+          <h2>📊 Production Progress</h2>
+
+          <p id="progressText">
+            Waiting for production to start...
+          </p>
+        </div>
+
+        <strong id="progressPercent">0%</strong>
+
+      </div>
+
+      <div class="progress-bar">
+        <div id="progressFill"></div>
+      </div>
+
+    </section>
+
+
+    <!-- RESULT -->
+    <section id="resultSection" class="card result-card hidden">
+
+      <div class="section-title">
+
+        <div>
+          <h2>🎉 Production Complete</h2>
+
+          <p>
+            Your YouTube production package is ready.
+          </p>
+        </div>
+
+        <span class="complete-badge">COMPLETED</span>
+
+      </div>
+
+
+      <div class="result-grid">
+
+        <div>
+          <span>🎯 Video Title</span>
+          <strong id="resultTitle">—</strong>
+        </div>
+
+        <div>
+          <span>📝 Script</span>
+          <strong>Ready</strong>
+        </div>
+
+        <div>
+          <span>🎬 Scenes</span>
+          <strong>Ready</strong>
+        </div>
+
+        <div>
+          <span>🔍 SEO</span>
+          <strong>Ready</strong>
+        </div>
+
+      </div>
+
+
+      <button class="export-btn">
+        📦 Export Complete Project
+      </button>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <p>
+      AI YouTube Automation Agent © 2026
+    </p>
+
+    <p>
+      Idea → Research → Script → Video → SEO → Export
+    </p>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
